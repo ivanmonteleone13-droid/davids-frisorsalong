@@ -60,14 +60,8 @@ export default function Header() {
 
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href={business.phoneLink}
-            className="text-sm font-semibold text-[#5C4033] hover:underline"
-          >
-            {business.phone}
-          </a>
-          <a
             href={business.bookingUrl}
-            className="rounded-full bg-[#C9A227] px-5 py-2.5 text-sm font-semibold text-[#3D2914] shadow-sm transition hover:bg-[#b8921f]"
+            className="rounded-full bg-[#c9a227] px-5 py-2.5 text-sm font-semibold text-[#0f0f1a] shadow-sm transition hover:opacity-90"
           >
             {label}
           </a>

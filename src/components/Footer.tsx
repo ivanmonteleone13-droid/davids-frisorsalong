@@ -3,7 +3,7 @@ import { business, getFullAddress } from "@/lib/business";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto bg-[#3D2914] text-amber-50">
+    <footer className="mt-auto bg-[#0f0f1a] text-[#f5f0e8]">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <p className="text-xl font-bold">{business.name}</p>
@@ -44,8 +44,8 @@ export default function Footer() {
           <address className="mt-4 space-y-2 text-sm not-italic text-amber-100/80">
             <p>{getFullAddress()}</p>
             <p>
-              <a href={business.phoneLink} className="hover:text-white">
-                {business.phone}
+              <a href={business.bookingUrl} className="hover:text-white">
+                {business.bookingLabel}
               </a>
             </p>
           </address>

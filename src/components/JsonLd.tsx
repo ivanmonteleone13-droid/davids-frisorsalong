@@ -17,12 +17,12 @@ export default function JsonLd() {
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "ShoeStore",
+    "@type": "HairSalon",
     "@id": `${siteUrl}/#localbusiness`,
     name: business.name,
     description: business.description,
     image: `${siteUrl}/og-image.png`,
-    telephone: business.phone,
+    ...(business.phone ? { telephone: business.phone } : {}),
     address: {
       "@type": "PostalAddress",
       streetAddress: business.address.street,
@@ -60,7 +60,7 @@ export default function JsonLd() {
     "@type": "LocalBusiness",
     name: business.name,
     description: business.description,
-    telephone: business.phone,
+    ...(business.phone ? { telephone: business.phone } : {}),
     address: getFullAddress(),
     url: siteUrl,
     geo: {

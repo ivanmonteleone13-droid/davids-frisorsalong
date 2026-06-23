@@ -1,29 +1,31 @@
 export const business = {
   name: "Davids Frisörsalong",
-  tagline: "Classic barbershop on Kungsängsgatan",
-  description: "Men's barbershop on Kungsängsgatan offering classic razor shaves and precision cuts.",
-  category: "Hair Salon",
+  tagline: "Barbershop på Kungsängsgatan",
+  description:
+    "Herrfrisör och barbershop på Kungsängsgatan 13 — klassisk rakning med kniv, skäggtrimning och hårklippning.",
+  category: "Barbershop",
   address: {
     street: "Kungsängsgatan 13",
     postalCode: "753 22",
     city: "Uppsala",
     country: "Sverige",
   },
-  phone: "018-10 00 00",
-  phoneLink: "tel:+4618100000",
+  phone: null as string | null,
+  phoneLink: null as string | null,
   email: null as string | null,
   emailLink: null as string | null,
   bookingUrl: "https://www.bokadirekt.se/places/davids-frisorsalong-130552",
   bookingLabel: "Boka på Bokadirekt",
+  websiteUrl: null as string | null,
   facebookUrl: null as string | null,
   instagramUrl: null as string | null,
   owner: "David",
   rating: 4.9,
-  reviewCount: 59,
+  reviewCount: 70,
   foundedYear: null as number | null,
-  coordinates: { lat: 59.8588, lng: 17.6386 },
+  coordinates: { lat: 59.8571, lng: 17.6414 },
   hours: {
-    note: "Ring gärna innan besök.",
+    note: "Boka tid via Bokadirekt.",
     regular: [
       { day: "Måndag", hours: "10:00 – 17:00" },
       { day: "Tisdag", hours: "10:00 – 17:00" },
@@ -35,91 +37,68 @@ export const business = {
     ],
   },
   usps: [
-    {
-      title: "Erfarna stylister",
-      description: "Professionell klippning och styling hos Davids Frisörsalong.",
-    },
-    {
-      title: "Centralt läge",
-      description: "Beläget på Kungsängsgatan 13 i Uppsala.",
-    },
-    {
-      title: "Höga betyg",
-      description: "59+ nöjda kunder enligt offentliga omdömen.",
-    },
-    {
-      title: "Enkel bokning",
-      description: "Boka tid online eller ring för snabb service.",
-    },
+    { title: "4,9 på Bokadirekt", description: "70 verifierade omdömen." },
+    { title: "Klassisk rakning", description: "Rakning med rakkniv — enligt Bokadirekt." },
+    { title: "Kungsängsgatan 13", description: "Centralt i Uppsala." },
+    { title: "Noggrann service", description: "«Mycket noggrann och man om resultatet» — Bokadirekt." },
   ],
   services: [
-    {
-      id: "h-rklippning",
-      name: "Hårklippning",
-      description: "Professionell hårklippning med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "klassisk-rakning",
-      name: "Klassisk rakning",
-      description: "Professionell klassisk rakning med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "sk-ggtrimning",
-      name: "Skäggtrimning",
-      description: "Professionell skäggtrimning med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "snagg",
-      name: "Snagg",
-      description: "Professionell snagg med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
-    {
-      id: "barnklippning",
-      name: "Barnklippning",
-      description: "Professionell barnklippning med fokus på kvalitet och kundnöjdhet.",
-      duration: "30–90 min",
-      priceFrom: null,
-      note: "Kontakta oss för aktuella priser.",
-    },
+    { id: "klassisk-rakning", name: "Klassisk rakning (rakkniv)", description: "Klassisk rakning med kniv!", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "skaggtrimning", name: "Skäggtrimning", description: "Forma skägget med sax och maskin, markera linjer med kniv.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "harklippning", name: "Hårklippning", description: "Maskinklippning och saxklippning inklusive styling.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "snagg", name: "Snagg", description: "Snagga hela håret endast med maskin.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "barnklippning", name: "Barnklippning 0–10 år", description: "Klippning för barn.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
   ],
+  heroImage: "/images/hero.jpg",
+  aboutImage: "/images/gallery-1.jpg",
+  gallery: [
+    { id: 1, label: "Salongen", image: "/images/hero.jpg" },
+    { id: 2, label: "Barber", image: "/images/gallery-1.jpg" },
+    { id: 3, label: "Kungsängsgatan", image: "/images/gallery-2.jpg" },
+  ],
+  about: {
+    headline: "Barbershop i Uppsala",
+    paragraphs: [
+      "Davids Frisörsalong på Kungsängsgatan 13 erbjuder hårklippning, skäggtrimning och klassisk rakning med kniv.",
+      "Boka tid via Bokadirekt — stylist Ciya och teamet tar hand om dig med noggrannhet och omsorg.",
+    ],
+  },
   testimonials: [
     {
-      text: "Fantastisk upplevelse hos Davids Frisörsalong. Personalen var professionell och resultatet överträffade förväntningarna.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Bra service och mycket noggrann!",
+      author: "Noel E.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/davids-frisorsalong-130552",
       rating: 5,
+      date: "2026-06-11",
     },
     {
-      text: "Rekommenderar Davids Frisörsalong varmt. Snabb service, trevligt bemötande och bra kvalitet till rimligt pris.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Mycket noggrann och man om resultatet! Mycket prisvärd!",
+      author: "Patrick E.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/davids-frisorsalong-130552",
       rating: 5,
+      date: "2026-06-05",
+    },
+    {
+      text: "Väldigt duktig frisör, bra bemötande. Rekommenderar varmt😃",
+      author: "Lotta E.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/davids-frisorsalong-130552",
+      rating: 5,
+      date: "2026-06-05",
+    },
+    {
+      text: "Mitt första besök hos Ciya och kan inte ge annat än massa beröm till en frisör som är mycket noggrann och är mån om att kunden skall lämna salongen med perfekt resultat. Så blev det i mitt fall, jag är supernöjd med både håret och skägget. Tack Ciya!",
+      author: "Peshang S.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/davids-frisorsalong-130552",
+      rating: 5,
+      date: "2026-06-03",
     },
   ],
-  seoKeywords: [
-    "barber Kungsängsgatan",
-    "herrfrisör Uppsala",
-    "rakning med kniv Uppsala",
-    "skäggtrim Uppsala",
-  ],
-  brandColors: {
-    primary: "#1a1a2e",
-    secondary: "#c9a227",
-    accent: "#f5f0e8",
-    dark: "#0f0f1a",
-  },
+  seoKeywords: ["barber Kungsängsgatan", "herrfrisör Uppsala", "rakning med kniv Uppsala", "Davids Frisörsalong"],
+  brandColors: { primary: "#1a1a2e", secondary: "#c9a227", accent: "#f5f0e8", dark: "#0f0f1a" },
 } as const;
 
 export function getFullAddress() {
@@ -128,11 +107,9 @@ export function getFullAddress() {
 }
 
 export function getMapsEmbedUrl() {
-  const query = encodeURIComponent(getFullAddress());
-  return `https://www.google.com/maps?q=${query}&output=embed`;
+  return `https://www.google.com/maps?q=${encodeURIComponent(getFullAddress())}&output=embed`;
 }
 
 export function getMapsLink() {
-  const query = encodeURIComponent(getFullAddress());
-  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getFullAddress())}`;
 }

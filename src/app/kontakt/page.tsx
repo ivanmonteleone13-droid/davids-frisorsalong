@@ -4,17 +4,17 @@ import { business, getFullAddress, getMapsEmbedUrl, getMapsLink } from "@/lib/bu
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description: `Kontakta ${business.name} på Stora Torget i Uppsala. Ring eller besök vår butik.`,
+  description: `Kontakta ${business.name} på Kungsängsgatan i Uppsala. Boka via Bokadirekt.`,
 };
 
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#3D2914] to-[#5C4033] py-20 text-white">
+      <section className="bg-gradient-to-br from-[#0f0f1a] to-[#1a1a2e] py-20 text-white">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="text-4xl font-bold sm:text-5xl">Kontakt</h1>
-          <p className="mt-6 max-w-2xl text-lg text-amber-50/90">
-            Vi finns på Stora Torget i centrala Uppsala. Ring gärna innan besök.
+          <p className="mt-6 max-w-2xl text-lg text-white/90">
+            Vi finns på Kungsängsgatan 13. Boka tid via Bokadirekt.
           </p>
         </div>
       </section>
@@ -22,20 +22,20 @@ export default function ContactPage() {
       <section className="py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-bold text-[#3D2914]">Kontaktuppgifter</h2>
+            <h2 className="text-2xl font-bold text-[#1a1a2e]">Kontaktuppgifter</h2>
             <dl className="mt-8 space-y-6">
               <div>
-                <dt className="text-sm font-medium text-[#5C4033]/60">Adress</dt>
-                <dd className="mt-1 text-lg text-[#3D2914]">{getFullAddress()}</dd>
+                <dt className="text-sm font-medium text-[#1a1a2e]/60">Adress</dt>
+                <dd className="mt-1 text-lg text-[#1a1a2e]">{getFullAddress()}</dd>
               </div>
               <div>
-                <dt className="text-sm font-medium text-[#5C4033]/60">Telefon</dt>
+                <dt className="text-sm font-medium text-[#1a1a2e]/60">Bokning</dt>
                 <dd>
                   <a
-                    href={business.phoneLink}
-                    className="text-lg font-semibold text-[#5C4033] hover:underline"
+                    href={business.bookingUrl}
+                    className="text-lg font-semibold text-[#c9a227] hover:underline"
                   >
-                    {business.phone}
+                    {business.bookingLabel}
                   </a>
                 </dd>
               </div>
