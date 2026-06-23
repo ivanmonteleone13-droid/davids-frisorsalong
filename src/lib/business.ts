@@ -43,12 +43,13 @@ export const business = {
     { title: "Noggrann service", description: "«Mycket noggrann och man om resultatet» — Bokadirekt." },
   ],
   services: [
-    { id: "klassisk-rakning", name: "Klassisk rakning (rakkniv)", description: "Klassisk rakning med kniv!", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "skaggtrimning", name: "Skäggtrimning", description: "Forma skägget med sax och maskin, markera linjer med kniv.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "harklippning", name: "Hårklippning", description: "Maskinklippning och saxklippning inklusive styling.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "snagg", name: "Snagg", description: "Snagga hela håret endast med maskin.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
-    { id: "barnklippning", name: "Barnklippning 0–10 år", description: "Klippning för barn.", duration: "—", priceFrom: null, note: "Källa: Bokadirekt." },
+    { id: "klassisk-rakning", name: "Klassisk rakning (rakkniv)", description: "Klassisk rakning med kniv!", duration: "—", priceFrom: 199, note: "Källa: Bokadirekt." },
+    { id: "skaggtrimning", name: "Skäggtrimning", description: "Forma skägget med sax och maskin, markera linjer med kniv.", duration: "—", priceFrom: 149, note: "Källa: Bokadirekt." },
+    { id: "harklippning", name: "Hårklippning", description: "Maskinklippning och saxklippning inklusive styling.", duration: "—", priceFrom: 350, note: "Källa: Bokadirekt." },
+    { id: "snagg", name: "Snagg", description: "Snagga hela håret endast med maskin.", duration: "—", priceFrom: 249, note: "Källa: Bokadirekt." },
+    { id: "barnklippning", name: "Barnklippning 0–10 år", description: "Klippning för barn.", duration: "—", priceFrom: 250, note: "Källa: Bokadirekt." },
   ],
+  logoImage: null as string | null,
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/gallery-1.jpg",
   gallery: [
