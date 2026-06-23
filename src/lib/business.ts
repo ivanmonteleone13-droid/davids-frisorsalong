@@ -49,7 +49,7 @@ export const business = {
     { id: "snagg", name: "Snagg", description: "Snagga hela håret endast med maskin.", duration: "—", priceFrom: 249, note: "Källa: Bokadirekt." },
     { id: "barnklippning", name: "Barnklippning 0–10 år", description: "Klippning för barn.", duration: "—", priceFrom: 250, note: "Källa: Bokadirekt." },
   ],
-  logoImage: null as string | null,
+  logoImage: "/images/logo.jpg" as string | null,
   heroImage: "/images/hero.jpg",
   aboutImage: "/images/gallery-1.jpg",
   gallery: [
